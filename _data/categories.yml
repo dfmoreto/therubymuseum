@@ -1,0 +1,19 @@
+# - title: Characters
+#   url: /characters.html
+#   show_on_home: True
+#   show_on_menu: True
+#   image_url: 
+#   icon_name: fas fa-hiking
+#   category: character
+#   tooltip: Caracters
+#   description: This is the section about Crown Jewels caracters
+
+# - title: Events
+#   url: /events.html
+#   show_on_home: True
+#   show_on_menu: True
+#   image_url: assets/img/categories/events.jpg 
+#   icon_name: fas fa-laptop-code
+#   category: events
+#   tooltip: Events
+#   description: This is the section about Crown Jewels events

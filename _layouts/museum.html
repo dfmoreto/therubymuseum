@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div class="post">
+
+  <div class="content-container {{ page.category }}">
+    <header>
+      {% if page.cover_image %}
+        <figure class="post-cover">
+          <img src="{{ page.cover_image | relative_url }}" alt="{{ page.cover_image_alt }}" class="post-cover_image" />
+        </figure>
+      {% endif %}
+      <h1>{{ page.title }}</h1>
+
+    </header>
+    <div class="post-content">
+      {{ content }}
+    </div>
+  </div>
+</div>

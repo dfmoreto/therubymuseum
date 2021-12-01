@@ -1,6 +1,6 @@
 ---
 layout: home
-title: This is the home-page title
-summary: This is summary in the home-page. It can be anything really, from describing what this website is about, to some texts about cats and dogs. If you want to see the source code of this theme, feel free to check out the repository on <a href="https://github.com/ItsMeaga1n/minimal-categorized" target="_blank">GitHub</a>.
+title: Welcome to The Ruby Museum!
+summary: Hoping to have a space in honor of the Crown Jewels of Ruby Community, as Why The Lucky Stiff and many other remarkable events, characters and things, we want to keep alive in our hearts.
 category: home
 ---

@@ -3,33 +3,31 @@ layout: default
 category: home
 ---
 <div class="content-container home">
-    
-    <h1>
-        {% if site.data.metaData.show_menu_logo_on_home_page %}
-        {% include avatar.html %}
-    {% endif %}
-        {{ page.title }}
-    </h1>
-    <p class="page-summary">{{ page.summary }}</p>
-    <div class="category_wrapper">
-    {% for menu_item in site.data.menu.menu_pages %}
-        {% if menu_item.show_on_home %}
-            <div class="category_container">
-                <div class="category_image">
-                    <a href="{{ menu_item.url | relative_url }}">
-                        <img class="category" src="{{ menu_item.image_url | relative_url}}">
-                    </a>
-                </div>
-                <div class="category_description">
-                    <a href="{{ menu_item.url | relative_url }}">
-                    <h2> {{ menu_item.title }} </h2>
-                    </a>
-                    <p>
-                        {{ menu_item.description }}
-                    </p>
-                </div>
-            </div>
-        {% endif %}
-    {% endfor %}
-</div>
+  <p class="page-summary">
+    <img src="{{ site.data.metaData.avatar_url }}"  />
+	  <h1>{{ page.title }}</h1>
+    {{ page.summary }}
+  </p>
+
+  <div class="category_wrapper">
+		{% for category in site.pages %}
+			{% if category.type == 'category' %}
+				<div class="category_container">
+					<div class="category_image">
+						<a href="{{ category.url | relative_url }}">
+						<img class="category" src="{{ category.image | relative_url}}">
+						</a>
+					</div>
+					<div class="category_description">
+						<a href="{{ category.url | relative_url }}">
+							<h2> {{ category.title }} </h2>
+						</a>
+						<p>
+							{{ category.description }}
+						</p>
+					</div>
+				</div>
+			{% endif %}
+		{% endfor %}
+	</div>
 </div>

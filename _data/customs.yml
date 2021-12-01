@@ -1,3 +1,4 @@
 custom-css:
+  - "https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Source+Sans+Pro:wght@200;300&display=swap"
 
 custom-js:

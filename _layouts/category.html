@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="content-container category-aggregator {{ page.category }}">
+  <h1>{{ page.title }}</h1>
+  {{ content }}
+  <div class="collection">
+    {% for post in site.museum %}
+      {% if post.category_sku == page.sku %}
+        <div class="group">
+          <div class="title">{{ post.title }}</div>
+          <ul>
+            <a class="item" href="{{ post.url }}">
+              <div class="square"><img src="{{ post.square_image }}"></div>
+              <div class="content">
+                <div class="description">
+                  {{ post.summary }}
+                </div>
+              </div>
+            </a>
+          </ul>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

@@ -8,15 +8,11 @@
     {% endif %}
     {% include common-head.html %}
   </head>
-  {% if site.data.menu.minimal_menu %}
   <body class="is-minimal-menu" >
-  {% else %}
-  <body>
-  {% endif %}
     {% include menu.html %}
-      <main class="content-layout">
-          {{ content }}
-          {% include footer.html %}
-      </main>
+    <main class="content-layout">
+      {{ content }}
+      {% include footer.html %}
+    </main>
   </body>
 </html>
