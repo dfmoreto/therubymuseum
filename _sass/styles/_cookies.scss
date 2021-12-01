@@ -2,7 +2,7 @@
     position: fixed;
     padding: 20px 15px;
     z-index: $pop-ups-z-1;
-    background-image: radial-gradient(farthest-corner at 25% 0, $p_darkest, $dark);
+    background: $s_dark;
     box-shadow: 0 0 6px 0 $dark;
     text-align: center;
     opacity: 0.95;
@@ -15,9 +15,10 @@
     border: 3px solid $dark;
 
     p {
-        color: $p_text;
+        color: $base-white;
         line-height: 1.6em;
         margin-bottom: 10px;
+        opacity: 1;
     }
     &.hidden {
         opacity: 0;
